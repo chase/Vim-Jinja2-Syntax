@@ -8,5 +8,6 @@ if exists("b:did_indent")
   finish
 endif
 
-" Use HTML formatting rules.
-runtime! indent/html.vim
+setl indentkeys=o,O,<Return>,<>>,!^F
+setl nosmartindent
+let b:did_indent = 1
